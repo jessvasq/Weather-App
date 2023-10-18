@@ -6,13 +6,13 @@ function Weather({data}) {
     <div className='weather'>
         <div className='top'>
             <span>
-            <p className='city'>New York</p>
-            <p className='weather-descrp'>sunny</p>
+            <p className='city'>{data.city}</p>
+            <p className='weather-descrp'>{data.weather[0].description}</p>
             </span>
-            <img alt='weather' className='weather-icon' src='weather-icons/sunny.png' />
+            <img alt='weather' className='weather-icon' src={`weather-icons/${data.weather[0].icon}.png`}/>
         </div>
         <div className='bottom'>
-            <p className='temperature'>14°C</p> 
+            <p className='temperature'>{Math.round(data.main.temp)}°C</p> 
             <div className='details'>
                 <div className='param-row'>
                     <span className='param-label-top'>Details</span>
@@ -20,22 +20,22 @@ function Weather({data}) {
 
                 <div className='param-row'>
                     <span className='param-label'>Feels like</span>
-                    <span className='param-value'>12°</span>
+                    <span className='param-value'>{Math.round(data.main.feels_like)}°</span>
                 </div>
 
                 <div className='param-row'>
                     <span className='param-label'>Wind</span>
-                    <span className='param-value'>10 MPH</span>
+                    <span className='param-value'>{data.wind.speed} MPH</span>
                 </div>
                 
                 <div className='param-row'>
                     <span className='param-label'>Humidity</span>
-                    <span className='param-value'>12%</span>
+                    <span className='param-value'>{data.main.humidity}%</span>
                 </div>
 
                 <div className='param-row'>
                     <span className='param-label'>Pressure</span>
-                    <span className='param-value'>12 HPA</span>
+                    <span className='param-value'>{data.main.pressure}HPA</span>
                 </div>
 
 

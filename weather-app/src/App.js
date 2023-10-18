@@ -13,10 +13,10 @@ function App() {
     const [lat, lon] = searchData.value.split('')
 
     //fetch current-weather
-    const currentWeatherFetch = fetch(`${WEATHER_API_URL}weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+    const currentWeatherFetch = fetch(`${WEATHER_API_URL}weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);  //add celsius units
 
     //fetch 3-hour forecast
-    const forecastFetch = fetch(`${WEATHER_API_URL}forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+    const forecastFetch = fetch(`${WEATHER_API_URL}forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
 
     //promise -- used to handle async functions like making network requests, fetching data, etc
     Promise.all([currentWeatherFetch, forecastFetch])
@@ -31,7 +31,7 @@ function App() {
   }
 
   console.log(currenWeather)
-  console.log(forecast)
+  // console.log(forecast)
 
   return (
     <div className="container">
