@@ -12,9 +12,9 @@ This weather application was created by integrating two APIs: one for weather da
 ![weather_app_desktop_view](https://github.com/jessvasq/Weather-App/assets/119137671/10efb555-8466-4628-9233-6844ec8f75e9)
 
 ## TECHNOLOGIES USED
-* React
-* JavaScript
-* CSS
+* <img src='https://github.com/jessvasq/Weather-App/assets/119137671/e66cb05e-0a4a-459b-ae49-87e7b45ccb75' width=40px height=40px> 
+* <img src='https://github.com/jessvasq/Weather-App/assets/119137671/3ba61b8f-b137-443b-86d1-c4be68f7e1b3' width=40px height=40px> 
+* <img src='https://github.com/jessvasq/Weather-App/assets/119137671/d2634705-c53b-4e4c-9fc0-a80b69691bf8' width=40px height=40px> 
 * APIS:
   *  OpenWeather
   *  GeoDB Cities
