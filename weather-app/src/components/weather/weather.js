@@ -1,7 +1,7 @@
 import React from 'react';
 import './weather.css'
 
-function Weather() {
+function Weather({data}) {
   return (
     <div className='weather'>
         <div className='top'>
