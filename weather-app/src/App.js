@@ -1,6 +1,7 @@
 import './App.css';
 import Search from './components/search/search';
 import Weather from './components/weather/weather';
+import Forecast from './components/forecast/forecast';
 import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 import { useState } from 'react';
 
@@ -38,6 +39,7 @@ function App() {
      <Search onSearchChange={handleOnSearchChange}/>
      {/*if data doesn't exist, don't display anything*/}
     {currenWeather && <Weather data={currenWeather} />}
+    {forecast && <Forecast data={forecast}/>}
     </div>
   );
 }
