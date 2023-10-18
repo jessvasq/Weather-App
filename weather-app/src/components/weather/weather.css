@@ -1,10 +1,11 @@
 .weather{
-    width: 400px;
+    width: 320px;
     border-radius: 59px;
-    background: #a6cdf2;
-    box-shadow: inset 10px 10px 26px #8daece,
-                inset -10px -10px 26px #bfecff;
-    margin: 20px auto 0 auto;
+    color: white;
+    background: #714E33;
+    box-shadow: inset 10px 10px 26px #714E33,
+                inset -10px -10px 26px #714E33;
+    margin: 20px auto 20px auto;
     padding: 0 20px 20px 20px;
 }
 
@@ -19,20 +20,22 @@
     height: 100px;
     width: 100px;
     padding: 20px;
-    margin: 10px 30px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .city{
     font-weight: bold;
-    margin: 10;
+    margin: 5px;
     letter-spacing: 1.5px;
+    font-size: 20px;
 }
 
-.weather-description {
+.weather-descrp {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1;
-    margin: 0;
+    margin-left: 0px;
+    margin-bottom: -15px;
+    color: #c2c2c2;
 }
 
 .temperature {
@@ -45,7 +48,7 @@
 
 .details{
     width: 100%;
-    padding-left: 50px;
+    padding-left: 28px;
 }
 
 .param-row{
@@ -63,8 +66,9 @@
 .param-value{
     text-align: right;
     font-weight: 600;
-    font-size: 14px;
-    margin-right: 20px;
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: 1.8;
 }
 
 .param-label-top{

@@ -11,11 +11,11 @@ function Forecast({data}) {
     //use slice so we can display the forecast
     const forecast_days = week_days.slice(dayInWeek, week_days.length).concat(week_days.slice(0, dayInWeek));
 
-    console.log(forecast_days)
+    // console.log(forecast_days)
 
     return (
   <>
-    <label className='title'>Daily</label>
+    <label className='title'>7-DAY FORECAST</label>
     <Accordion allowZeroExpanded>  
         {/* loop to get the data */}
       

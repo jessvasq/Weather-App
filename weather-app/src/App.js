@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className="container">
+      <h1>WEATHER</h1>
      <Search onSearchChange={handleOnSearchChange}/>
      {/*if data doesn't exist, don't display anything*/}
     {currenWeather && <Weather data={currenWeather} />}

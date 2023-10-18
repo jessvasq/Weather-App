@@ -14,9 +14,6 @@ function Weather({data}) {
         <div className='bottom'>
             <p className='temperature'>{Math.round(data.main.temp)}°C</p> 
             <div className='details'>
-                <div className='param-row'>
-                    <span className='param-label-top'>Details</span>
-                </div>
 
                 <div className='param-row'>
                     <span className='param-label'>Feels like</span>
